@@ -1,0 +1,35 @@
+.aboutImage {
+    color: white;
+    float: left; 
+    padding: 1rem 1rem;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 150px;
+  }
+  
+  .image {
+    border-radius: 25px;
+  }
+
+  .divText {
+    grid-template-columns: repeat(2, 3fr);
+    display: grid;
+    padding: 1rem 1rem;
+    text-align: center !important;
+  }
+
+.spanText {
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em; 
+}
+   
+.text {
+    color: white;
+    text-align: justify;
+    line-height: 150%;
+  }
+
+  

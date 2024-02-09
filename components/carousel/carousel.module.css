@@ -1,0 +1,52 @@
+
+.mainImage {
+    height: 500px;
+    float: right;
+    text-align: right;
+}
+
+.image {
+    border-radius: 50%;
+    width: 30%;
+    width: 100px;
+}
+
+.text {
+   text-align: center; 
+}
+
+.hide {
+    opacity: 0;
+}
+
+.spanText {
+    color: rgb(40, 40, 206);
+  }
+  
+  .textCarousel {
+    color: white;
+    font-size: 25px;
+    padding: 1rem 1rem;
+    float: left; 
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .imageDiv {
+    color: white;
+    float: right; 
+    vertical-align: middle;
+    padding: 1rem 1rem;
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    position: relative;
+    width: 25%;
+    height: 400px;
+    margin-right: 100px;
+  }
+  
+  
+  
+  .image {
+    border-radius: 50%;
+  }
