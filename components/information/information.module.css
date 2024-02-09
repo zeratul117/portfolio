@@ -29,6 +29,7 @@
 }
 
 .buttonStyle {
+    font-family: Monospace;
     outline: 0;
     border: 0;
     cursor: pointer;
