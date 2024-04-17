@@ -15,7 +15,6 @@ const CarouselTest = () => {
   const [width, setWidth] = useState((typeof window !== 'undefined' && (window.innerWidth)));
   const [mounted, setMounted] = useState(false);
   const breakpoint = 1500;
-  const router = useRouter()
 
   useEffect(() => {
     setMounted(true);

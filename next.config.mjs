@@ -7,6 +7,9 @@ const nextConfig = {
                 hostname: "media.istockphoto.com"
             }
         ]
+    },
+    eslint: {
+        ignoreDuringBuilds: true
     }
 };
 

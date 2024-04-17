@@ -3,12 +3,10 @@ import Image from "next/image";
 import styles from "../projects/project.module.css"
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation'
-import ErrorPage from 'next/error'
 
 export default function Projects() {
 const [width, setWidth] = useState((typeof window !== 'undefined' && (window.innerWidth)));
 const [mounted, setMounted] = useState(false);
-const breakpoint = 1000;
 const router = useRouter()
 
   useEffect(() => {
