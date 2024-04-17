@@ -12,7 +12,7 @@ import React from 'react'
 import Projects from '../projects/projects';
 
 const CarouselTest = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState((typeof window !== 'undefined' && (window.innerWidth)));
   const [mounted, setMounted] = useState(false);
   const breakpoint = 1500;
   const router = useRouter()
