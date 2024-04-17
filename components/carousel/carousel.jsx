@@ -6,26 +6,61 @@ import Intruduction from '../introduction/introduction';
 import styles from "../carousel/carousel.module.css"
 import Skill from '../skills/skill';
 import About from '../about/about';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation'
+import React from 'react'
+import Projects from '../projects/projects';
 
 const CarouselTest = () => {
-  return (
-    <div>
-      <Carousel width={1550} showArrows={true} transitionTime="2000" infiniteLoop> 
-         <div>
-           <Intruduction className={styles.text} />   
-         </div>
-         <div>
-          <About />
-         </div>
-         <div>
-           <Skill /> 
-         </div>
-     </Carousel>
-    </div>
+  const [width, setWidth] = useState(window.innerWidth);
+  const [mounted, setMounted] = useState(false);
+  const breakpoint = 1500;
+  const router = useRouter()
 
-
-
-  )
+  useEffect(() => {
+    setMounted(true);
+      const handleResizeWindow = () => {
+        setWidth(window.innerWidth);
+      } 
+       window.addEventListener("resize", handleResizeWindow);
+       return () => {
+         window.removeEventListener("resize", handleResizeWindow);
+       };
+     }, []);
+    
+     if (mounted) {
+      if (width > breakpoint) {
+        return (
+          <div>
+            <Carousel width={1550} showArrows={true} transitionTime="2000" infiniteLoop> 
+               <div>
+                 <Intruduction className={styles.text} />   
+               </div>
+               <div>
+                <About />
+               </div>
+               <div>
+                 <Skill /> 
+               </div>
+               <div>
+                 <Projects /> 
+               </div>
+           </Carousel>
+          </div>
+        )
+      } else {
+        
+        return (
+          <div>
+          <Intruduction />   
+        </div>
+      );
+        
+      }
+     }
+     return (
+      <div></div>
+     );
 }
 
 export default CarouselTest       

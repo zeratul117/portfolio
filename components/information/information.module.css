@@ -1,3 +1,12 @@
+/* .buttonDiv {
+    text-align: center !important;
+    margin-bottom: 2rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
 .mainDiv {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -7,11 +16,6 @@
     position:absolute;
     bottom:0;
     left:0;
-    
-
-}
-.asd{
-    color: white !important;
 }
 
 .logos {
@@ -53,3 +57,12 @@
     box-shadow: inset 0px 3px 7px #3c4fe0;
     transform: translateY(2px);
 }
+
+@media (max-width: 60em) {
+    .mainDiv {
+        position: fixed !important;
+        overflow: hidden;
+        right: 0;
+        bottom: 0;
+    }
+  } 

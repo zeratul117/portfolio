@@ -3,8 +3,7 @@
     float: left; 
     padding: 1rem 1rem;
     position: relative;
-    margin-left: 100px;
-    margin-right: 150px;
+    margin-left: 70px;
   }
   
   .image {
@@ -30,5 +29,28 @@
     text-align: justify;
     line-height: 150%;
   }
+
+  .grid_skill {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    display: grid;
+  }
+
+  @media (max-width: 1000px) {
+      .container {
+        padding: 1rem 2rem;
+        text-align: left;
+        margin-left: 20px;
+        position: relative;
+        left: 0px;
+        top: 40px;
+        z-index: -1;
+      }
+      .divText {
+        display: flex;
+        width: 100%;
+        padding: 0rem 0rem;
+      }
+    }
 
   

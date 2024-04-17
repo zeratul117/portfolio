@@ -1,6 +1,36 @@
+html {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(28, 88%, 62%);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 75%);
+  --body-color: hsl(0, 0%, 6%);
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+  --font-semi-bold: 600;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+ }
+
 body {
   background-color: rgb(20, 19, 19);
-  overflow:hidden;
+  scrollbar-color: rgb(207, 27, 27) rgb(20, 25, 27) !important;
+  scrollbar-width: thin !important;
+}
+
+footer {
+  display: block;
+  unicode-bidi: isolate;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(32, 32, 32, 0.486);
+  width: 100%;
 }
 
 h1 {
@@ -48,4 +78,9 @@ h1 {
   display: inline-block !important;
   padding: 14px !important;
   transform: rotate(135deg)!important;
+}
+
+.mainTag {
+  z-index: -1;
+  position: fixed;
 }

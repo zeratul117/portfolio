@@ -31,4 +31,21 @@
     line-height: 150%;
   }
 
+  @media (max-width: 1000px) {
+      .container {
+        padding: 1rem 1rem;
+        text-align: left;
+        margin-left: 50px;
+        position: relative;
+        left: 0;
+        top: 40px;
+        z-index: -1;
+      }
+      .divText {
+        display: flex;
+        width: 100%;
+        padding: 0rem 0rem;
+      }
+    }
+
   

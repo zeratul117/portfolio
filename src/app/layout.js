@@ -1,8 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import dynamic from 'next/dynamic'
+import Navbar from "../../components/navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const Information = dynamic(() =>import("../../components/information/information"), {ssr: false})
+const ShootingStars = dynamic(() =>import("../../components/shootingStars/shootingStars"), {ssr: false})
 
 
 export const metadata = {
@@ -23,7 +27,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        {children}
+      <Navbar />
+        <main className="mainTag">
+        <ShootingStars />
+          {children}
+        </main>
+        <footer>
+          <Information />
+        </footer>
         </body>
     </html>
   );
