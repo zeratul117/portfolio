@@ -29,21 +29,26 @@
 }
 
 @media (max-width: 1000px) {
-  
+
+  .testing {
+    z-index: -1;
+    position: absolute !important;
+  }
+
   .textCarousel {
-    font-size: 10px;
+    font-size: 9px;
     padding: 1rem 1rem;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 10px;
     position: fixed;
     left: 0;
-    top: 125px;
+    top: 62px;
     z-index: -1;
-    width: 100%;
+    width: 148%;
   }
 
   .imageDiv { 
-    top: 360px;
+    top: 300px;
     width: 200px;
     height: 200px;
     font-size: 10px;

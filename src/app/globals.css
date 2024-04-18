@@ -1,5 +1,4 @@
 html {
-  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -22,6 +21,12 @@ body {
   background-color: rgb(20, 19, 19);
   scrollbar-color: rgb(207, 27, 27) rgb(20, 25, 27) !important;
   scrollbar-width: thin !important;
+  position: absolute;
+  top: 0;
+  width: 256px;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  overflow-y: scroll;
 }
 
 footer {
@@ -47,7 +52,7 @@ h1 {
 } 
 
 .carousel.carousel-slider {
-  overflow: inherit;
+
 }
 
 .carousel .control-next.control-arrow, .carousel .control-next.control-arrow:hover{
@@ -84,3 +89,12 @@ h1 {
   z-index: -1;
   position: fixed;
 }
+
+
+@media (max-width: 700px) {
+  .mainTag {
+    z-index: 0;
+    position: sticky;
+  }
+}
+

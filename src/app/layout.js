@@ -29,10 +29,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <Navbar />
         <main className="mainTag">
-        <ShootingStars />
           {children}
         </main>
-        <footer>
+        <footer className="footerStyle">
           <Information />
         </footer>
         </body>

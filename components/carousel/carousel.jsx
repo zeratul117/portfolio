@@ -10,6 +10,9 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import Projects from '../projects/projects';
+import dynamic from 'next/dynamic'
+
+const ShootingStars = dynamic(() =>import("../../components/shootingStars/shootingStars"), {ssr: false})
 
 const CarouselTest = () => {
   const [width, setWidth] = useState((typeof window !== 'undefined' && (window.innerWidth)));
@@ -30,7 +33,8 @@ const CarouselTest = () => {
      if (mounted) {
       if (width > breakpoint) {
         return (
-          <div>
+          <div className={styles.testing}>
+            <ShootingStars />
             <Carousel width={1550} showArrows={true} transitionTime="2000" infiniteLoop> 
                <div>
                  <Intruduction className={styles.text} />   

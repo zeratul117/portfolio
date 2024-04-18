@@ -45,11 +45,15 @@
         left: 0px;
         top: 40px;
         z-index: -1;
+        margin-bottom: 200px;
       }
       .divText {
         display: flex;
-        width: 100%;
+        width: 280%;
         padding: 0rem 0rem;
+      }
+      .aboutImage {
+        margin-left: 210px !important;
       }
     }
 

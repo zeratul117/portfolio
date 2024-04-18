@@ -61,7 +61,6 @@
 @media (max-width: 60em) {
     .mainDiv {
         position: fixed !important;
-        overflow: hidden;
         right: 0;
         bottom: 0;
     }

@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  font-family: cursive;
+  /* z-index: -1 !important;
+  position: sticky !important; */
 }
 
 .description {
@@ -114,6 +115,11 @@
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
+  .main { 
+    z-index: 0 !important;
+    position: sticky !important;
+  }
+
 
   .card:hover span {
     transform: translateX(4px);
